@@ -1,0 +1,304 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+div[class*="col-"]{
+    float: left;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.color1{
+    background: red;
+    height: 100px;
+}
+
+.color2{
+    background: black;
+    height: 100px;
+}
+
+.color3{
+    background: green;
+    height: 100px;
+}
+
+.color4{
+    background: blue;
+    height: 100px;
+}
+
+.col-1{
+    width: 8.33%;
+}
+
+.col-2{
+    width: 16.66%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.66%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.33%;
+}
+
+.col-8{
+    width: 66.66%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.33%;
+}
+
+.col-11{
+    width: 91.66%;
+}
+
+.col-12{
+    width: 100%;
+}
+/* offset */
+
+.col-offset-1{
+    margin-left: 8.33%;
+}
+
+.col-offset-2{
+    margin-left: 16.66%;
+}
+
+.col-offset-3{
+    margin-left: 25%;
+}
+
+.col-offset-4{
+    margin-left: 33.33%;
+}
+
+.col-offset-5{
+    margin-left: 41.66%;
+}
+
+.col-offset-6{
+    margin-left: 50%;
+}
+
+.col-offset-7{
+    margin-left: 58.33%;
+}
+
+.col-offset-8{
+    margin-left: 66.66%;
+}
+
+.col-offset-9{
+    margin-left: 75%;
+}
+
+.col-offset-10{
+    margin-left: 83.33%;
+}
+
+.col-offset-11{
+    margin-left: 91.66%;
+}
+
+.col-offset-12{
+    margin-left: 100%;
+}
+
+/* tapsiriqlar */
+
+#ourwork{
+    margin: 50px 0;
+}
+
+#ourwork h1{
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 20px 0;
+}
+
+#ourwork h1 span{
+    font-weight: 700;
+}
+
+#ourwork p{
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+#ourwork .item{
+    position: relative;
+    border-radius: 5px;
+    width: 90%;
+}
+
+#ourwork .item img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+#ourwork .item .cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    border-radius: 5px;
+}
+
+#ourwork .item h2{
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+#ourwork .item h4{
+    position: absolute;
+    top: 65%;
+    right: 40%;
+    color: white;
+    padding: 5px;
+    background: #6666c3;
+}
+
+#canvas{
+    margin: 50px 0;
+}
+
+#canvas .item{
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+#canvas .item img{
+    width: 100%;
+}
+
+#canvas .item:hover img{
+    transform: scale(1.2);
+}
+
+#canvas .item span{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    padding: 5px;
+    background-color: #f0ad4e!important;
+    font-size: 13px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: 1s;
+}
+
+#canvas .item .icon{
+    position: absolute;
+    left: 20px;
+    bottom: 25px;
+    color: white;
+}
+
+#canvas .item .icon i{
+    width: 25px;
+    height: 25px;
+    background: black;
+    opacity: 0.4;
+    line-height: 25px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+#canvas .item .icon i:hover{
+    opacity: 1;
+}
+
+#canvas .item .price{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+}
+
+#canvas .item .price h1{
+    font-size: 30px;
+}
+
+#canvas .item .price p{
+    margin-left: 10px;
+}
+
+#canvas .item:hover span{
+    opacity: 1;
+}
+
+/* Before After */
+
+li{
+    display: inline-block;
+    padding: 10px;
+    min-width: 80px;
+    border: 1px solid black;
+    position: relative;
+}
+
+li::before{
+    content: '';
+    display: inline-block;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 10px 10px 0 0;
+border-color: #007bff transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+li::after{
+    content: '';
+    display: inline-block;
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 0 10px 10px;
+border-color: transparent transparent #007bff transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
